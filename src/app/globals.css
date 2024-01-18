@@ -100,6 +100,10 @@ a {
   color: inherit;
 }
 
+.swiper-slide:first-child {
+  margin-left: 20px;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

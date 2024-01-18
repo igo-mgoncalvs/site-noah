@@ -1,5 +1,8 @@
+'use client'
+
 import Image from 'next/image'
-import styles from './page.module.css'
+import { Swiper, SwiperSlide } from 'swiper/react';
+
 import Header from '@/components/header'
 
 import phone from '@/assets/Celular.png'
@@ -16,7 +19,9 @@ import icone from '@/assets/icons/icone-noah.svg'
 import iconeGradient from '@/assets/icons/Icone-gradient.svg'
 
 import shepherds from '@/mockdata/shepherds.json'
-import Swiper from 'swiper'
+
+import styles from './page.module.css'
+import 'swiper/css';
 
 export default function Home() {
   return (
@@ -156,25 +161,38 @@ export default function Home() {
         <div className={styles.shepherdContainer}>
           <p className={styles.shepherd_title}>Pastores</p>
           <div className={styles.shepherd}>
+          <Swiper
+            spaceBetween={18}
+            slidesPerView={2.4}
+            breakpoints={{
+              425: {
+                slidesPerView: 2.5
+              }
+            }}
+            style={{ paddingRight: 20 }}
+          >
             {shepherds.data.map((item) => (
-              <div key={item.id} className={styles.shepherd_card}>
-                <Image
-                  src={item.img}
-                  alt={item.name}
-                  width={80}
-                  height={80}
-                  className={styles.shepherd_image}
-                />
-                <p className={styles.shepherd_name}>{item.name}</p>
-                <p className={styles.shepherd_church}>{item.church}</p>
-                <Image
-                  src={iconeGradient}
-                  className={styles.shepherd_icone}
-                  width={20}
-                  alt='logo'
-                />
-              </div>
+              <SwiperSlide key={item.id}>
+                <div className={styles.shepherd_card}>
+                  <Image
+                    src={item.img || ""}
+                    alt={item.name}
+                    width={80}
+                    height={80}
+                    className={styles.shepherd_image}
+                  />
+                  <p className={styles.shepherd_name}>{item.name}</p>
+                  <p className={styles.shepherd_church}>{item.church}</p>
+                  <Image
+                    src={iconeGradient}
+                    className={styles.shepherd_icone}
+                    width={20}
+                    alt='logo'
+                  />
+                </div>
+              </SwiperSlide>
             ))}
+          </Swiper>
           </div>
         </div>
 
