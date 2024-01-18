@@ -1,0 +1,54 @@
+.aboutUsContainer {
+  background-color: #fff;
+  display: flex;
+}
+
+.aboutUs_Main {
+  background-color: #fff;
+  display: flex;
+  padding-top: 26px;
+}
+
+.aboutUs_imageBackground {
+  position: absolute;
+  width: 100%;
+}
+
+.aboutUs {
+  color: #000;
+  padding-bottom: 30px;
+}
+
+.aboutUs_title {
+  font-size: 28px;
+  font-weight: 200;
+  margin-bottom: 16px;
+}
+
+.aboutUs_listTitle {
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.aboutUs_description {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 12.836px;
+  padding-right: 8px;
+}
+
+.aboutUs_list {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.aboutUs_listPoint {
+  font-size: 8px;
+  padding: 6px;
+  background-color: #39196E;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 400;
+}

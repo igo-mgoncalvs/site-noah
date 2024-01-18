@@ -1,0 +1,26 @@
+.churchesContainer {
+  background-color: #02161E;
+  padding: 18px 24px;
+}
+
+.churches_addressList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 80px
+}
+
+.churches_text {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+
+.churches_itemTitle {
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.churches_itemAddress {
+  font-size: 10px;
+}

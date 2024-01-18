@@ -1,0 +1,24 @@
+.cellsContainer {
+  padding: 20px;
+  background-color: #02161E;
+}
+
+.cells_header {
+  background-image: url('../../assets/Celulas.png');
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.cells_title {
+  font-size: 30px;
+  margin-bottom: 6px;
+  font-weight: 300;
+}
+
+.cells_text {
+  font-size: 10px;
+  font-weight: 300;
+}

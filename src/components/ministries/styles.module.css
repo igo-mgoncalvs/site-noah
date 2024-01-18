@@ -1,0 +1,62 @@
+.ministriesContainer {
+  background-color: #fff;
+  color: #000;
+  padding-top: 15px;
+  padding-bottom: 24px;
+}
+
+.ministries_title {
+  font-size: 26px;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 22px;
+}
+
+.ministries_list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px
+}
+
+.ministries_item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 0 18px;
+}
+
+.ministries_listTitles {
+  font-size: 20px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.ministries_listDescription {
+  font-size: 10px;
+  line-height: 11.001px;
+}
+
+.ministries_rlsp {
+  color: #031CFF;
+}
+
+.ministries_k {
+  color: #FF7A00;
+  font-size: 28px;
+}
+
+.ministries_i {
+  color:#74BC51;
+  font-size: 28px;
+}
+
+.ministries_d {
+  color: #FFB800;
+  font-size: 28px;
+}
+
+.ministries_s {
+  color: #0085FF;
+  font-size: 28px;
+}

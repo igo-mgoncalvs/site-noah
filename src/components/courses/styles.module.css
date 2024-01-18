@@ -1,0 +1,39 @@
+.coursesContainer {
+  background-color: #02161E;
+}
+
+.courses_header {
+  background: url('../../assets/Courses.png'), lightgray 0px -303.25px / 100% 177.045% no-repeat;
+  mix-blend-mode: luminosity;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+  padding-bottom: 38px;
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.courses_main {
+  padding: 24px 22px;
+
+}
+
+.courses_MaturityTitle {
+  font-size: 31px;
+  font-weight: 300;
+  margin-bottom: 12px;
+}
+
+.courses_text {
+  font-size: 12px;
+  margin-bottom: 12px;
+  font-weight: 300;
+}
+
+.courses_list {
+  font-size: 12px;
+  font-weight: 300;
+  margin-left: 22px;
+  margin-bottom: 12px;
+}

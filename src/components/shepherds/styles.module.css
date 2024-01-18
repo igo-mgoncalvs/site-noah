@@ -1,0 +1,51 @@
+.shepherdContainer {
+  padding: 20px 0;
+  background: linear-gradient(90deg, #39196E 40.17%, #702280 88.78%);
+}
+
+.shepherd_title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.shepherd {
+  display: flex;
+  flex-direction: row;
+  gap: 18px
+}
+
+.shepherd_card {
+  background-color: #fff;
+  padding: 14px 20px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 1.624px 1.624px 0px rgba(0, 0, 0, 0.25), 0px 1.624px 1.624px 0px rgba(0, 0, 0, 0.25);
+}
+
+.shepherd_image {
+  border-radius: 100%;
+  box-shadow: 0px 1.624px 1.624px 0px rgba(0, 0, 0, 0.25), 0px 1.624px 1.624px 0px rgba(0, 0, 0, 0.25);
+}
+
+.shepherd_name {
+  display: flex;
+  justify-content: center;
+  color: #000;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.shepherd_church {
+  display: flex;
+  justify-content: center;
+  color: #000;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}

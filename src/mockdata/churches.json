@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "id": 0,
+      "title": "Guapituba",
+      "address": "R. Cícero de Campos Póvoa, 42 - Guapituba, Mauá - SP, 09360-460"
+    },
+    {
+      "id": 1,
+      "title": "Jd. Esperança",
+      "address": "Av. José moreira 184, Jd IV Centenário - Mauá"
+    },
+    {
+      "id": 2,
+      "title": "Pq. Das Flores Flores",
+      "address": "AV. Brasil 02 Pq. Das flores - SP"
+    },
+    {
+      "id": 3,
+      "title": "Pq. das Américas",
+      "address": "R. Guatemala, 478 - Mauá"
+    },
+    {
+      "id": 4,
+      "title": "Jd. Zaira",
+      "address": "Rua João Paulino Faria, 132, Jd. Zaira - Mauá"
+    },
+    {
+      "id": 5,
+      "title": "Feital",
+      "address": "Av. Benedita F. da veiga 132 Jd.Feital - Mauá"
+    },
+    {
+      "id": 6,
+      "title": "Santo andré",
+      "address": "Av. Dom Pedro I. 1207 Vila pires - Santo andré"
+    },
+    {
+      "id": 7,
+      "title": "Itaim Paulista",
+      "address": "Rua Bétula Negra, 71 - Jd. Camargo Novo"
+    },
+    {
+      "id": 8,
+      "title": "Araucária - PR",
+      "address": "Iguaçu, Araucária - Paraná, 83701-020"
+    },
+    {
+      "id": 9,
+      "title": "Curitiba",
+      "address": "R. Marcos Bertoldi, 345 - Campo de Santana - Curitiba"
+    },
+    {
+      "id": 10,
+      "title": "Vila magini",
+      "address": "R. Pau Brasil, jardim ipe - 79"
+    },
+    {
+      "id": 11,
+      "title": "Elba",
+      "address": "Av. Custódio de Sá e Faria, 1003 - Jardim Elba"
+    }
+  ]
+}
