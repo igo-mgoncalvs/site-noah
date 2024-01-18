@@ -3,11 +3,7 @@
 import Image from 'next/image'
 
 import Header from '@/components/header'
-
-
-
 import icone from '@/assets/icons/icone-noah.svg'
-
 
 import styles from './page.module.css'
 import AboutUs from '@/components/aboutUs';
@@ -18,8 +14,10 @@ import Courses from '@/components/courses'
 import Medias from '@/components/medias'
 import Churches from '@/components/churches'
 import Footer from '@/components/footer'
+import useWindowSize from '@/hooks/useWindowSize'
 
 export default function Home() {
+  const size = useWindowSize()
 
   return (
     <main className={styles.main}>
@@ -44,15 +42,17 @@ export default function Home() {
               </p>
             </div>
 
-            <Image 
-              src={icone}
-              style={{
-                width: window.innerWidth >= 1024 ? '80vw' : '30vw',
-                height: 'auto'
-              }}
-              className={styles.icon}
-              alt='Ícone apóstrofe'
-            />
+            {size.width && (
+              <Image 
+                src={icone}
+                style={{
+                  width: size.width >= 1024 ? '80vw' : '30vw',
+                  height: 'auto'
+                }}
+                className={styles.icon}
+                alt='Ícone apóstrofe'
+              />
+            )}
           </div>
         </div>
       </div>

@@ -1,5 +1,9 @@
+'use client'
+
 import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react';
+
+import useWindowSize from '@/hooks/useWindowSize';
 
 import iconeGradient from '@/assets/icons/Icone-gradient.svg'
 
@@ -9,6 +13,8 @@ import styles from './styles.module.css'
 import 'swiper/css';
 
 function Shepherds () {
+  const size = useWindowSize()
+
   return (
     <div className={styles.shepherdContainer} id="pastores">
       <p className={styles.shepherd_title}>Pastores</p>
@@ -40,6 +46,8 @@ function Shepherds () {
       >
         {shepherds.data.map((item) => (
           <SwiperSlide key={item.id}>
+            {size.width && (
+
             <div className={styles.shepherd_card}>
               <Image
                 src={item.img || ""}
@@ -47,8 +55,9 @@ function Shepherds () {
                 width={80}
                 height={80}
                 style={{
-                  width: window.innerWidth >= 1440 ? '13vw' : '20vw',
-                  height: 'auto'
+                  width: size.width >= 1440 ? '13vw' : '20vw',
+                  height: 'auto',
+                  objectFit: "contain"
                 }}
                 className={styles.shepherd_image}
               />
@@ -58,12 +67,13 @@ function Shepherds () {
                 src={iconeGradient}
                 className={styles.shepherd_icone}
                 style={{
-                  width: window.innerWidth >= 1440 ? '2vw' : '3vw',
+                  width: size.width >= 1440 ? '2vw' : '3vw',
                   height: 'auto'
                 }}
                 alt='logo'
               />
             </div>
+            )}
           </SwiperSlide>
         ))}
       </Swiper>
