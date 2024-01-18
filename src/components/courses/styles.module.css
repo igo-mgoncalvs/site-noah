@@ -16,7 +16,6 @@
 
 .courses_main {
   padding: 24px 22px;
-
 }
 
 .courses_MaturityTitle {
@@ -36,4 +35,20 @@
   font-weight: 300;
   margin-left: 22px;
   margin-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+  .courses_header {
+    padding-top: 130px;
+    padding-bottom: 70px;
+  }
+
+  .courses_text {
+    font-size: 16px;
+    line-height: 20pxs;
+  }
+
+  .courses_list {
+    font-size: 16px;
+  }
 }

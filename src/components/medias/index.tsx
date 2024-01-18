@@ -7,7 +7,7 @@ import styles from './styles.module.css'
 
 function Medias () {
   return (
-    <div className={styles.mediasContainer}>
+    <div className={styles.mediasContainer} id="pregacao">
       <p className={styles.medias_title}>Ouça as pregações</p>
       <div className={styles.medias_main}>
         <p className={styles.medias_spotify}>Spotify</p>
@@ -15,6 +15,10 @@ function Medias () {
           <Image
             src={spotify}
             alt='Imagem do spotify no celular'
+            style={{
+              width: '40vw',
+              height: 'auto'
+            }}
           />
           <div>
             <a
@@ -42,6 +46,10 @@ function Medias () {
           <Image
             src={youtube}
             alt='Imagem do youtube no celular'
+            style={{
+              width: '40vw',
+              height: 'auto'
+            }}
           />
         </div>
       </div>

@@ -5,11 +5,13 @@
 
 .cells_header {
   background-image: url('../../assets/Celulas.png');
+  background-size: cover;
   display: flex;
   justify-content: center;
   padding: 40px 0;
   font-size: 30px;
   font-weight: 300;
+  position: relative;
 }
 
 .cells_title {
@@ -21,4 +23,24 @@
 .cells_text {
   font-size: 10px;
   font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  .cellsContainer {
+    padding: 40px 30px;
+  }
+
+  .cells_header {
+    font-size: 48px;
+    padding: 65px 0;
+  }
+
+  .cells_title {
+    font-size: 48px;
+  }
+
+  .cells_text {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }

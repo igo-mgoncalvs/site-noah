@@ -24,3 +24,27 @@
 .churches_itemAddress {
   font-size: 10px;
 }
+
+@media (max-width: 320px) {
+  .churches_addressList {
+    gap: 16px 30px
+  }
+}
+
+@media (min-width: 768px) {
+  .churches_text {
+    font-size: 32px;
+  }
+
+  .churches_addressList {
+    gap: 30px 120px;
+  }
+
+  .churches_itemTitle {
+    font-size: 18px;
+  }
+
+  .churches_itemAddress {
+    font-size: 14px;
+  }
+}

@@ -2,7 +2,7 @@ import styles from './styles.module.css'
 
 function Courses () {
   return (
-    <div className={styles.coursesContainer}>
+    <div className={styles.coursesContainer} id="cursos">
       <p className={styles.courses_header}>
         Cursos
       </p>

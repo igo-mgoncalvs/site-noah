@@ -68,3 +68,39 @@
 .medias_imageBackground {
   position: absolute;
 }
+
+@media (max-width: 320px) {
+  .medias_spotify {
+    font-size: 28px;
+  }
+
+  .medias_youtube {
+    font-size: 28px;
+  }
+
+  .medias_spotifyButton {
+    font-size: 10px;
+  }
+
+  .medias_youtubeButton {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .medias_title {
+    font-size: 32px;
+  }
+
+  .medias {
+    padding: 0 50px;
+  }
+
+  .medias_spotifyButton {
+    font-size: 28px;
+  }
+
+  .medias_youtubeButton {
+    font-size: 28px;
+  }
+}

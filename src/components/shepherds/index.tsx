@@ -10,15 +10,22 @@ import 'swiper/css';
 
 function Shepherds () {
   return (
-    <div className={styles.shepherdContainer}>
+    <div className={styles.shepherdContainer} id="pastores">
       <p className={styles.shepherd_title}>Pastores</p>
       <div className={styles.shepherd}>
       <Swiper
         spaceBetween={18}
         slidesPerView={2.4}
         breakpoints={{
+          320: {
+            slidesPerView: 2.3,
+          },
           425: {
             slidesPerView: 2.5
+          },
+          768: {
+            slidesPerView: 2.8,
+            spaceBetween: 28
           }
         }}
         style={{ paddingRight: 20 }}
@@ -31,6 +38,10 @@ function Shepherds () {
                 alt={item.name}
                 width={80}
                 height={80}
+                style={{
+                  width: '20vw',
+                  height: '20vw'
+                }}
                 className={styles.shepherd_image}
               />
               <p className={styles.shepherd_name}>{item.name}</p>
@@ -38,7 +49,10 @@ function Shepherds () {
               <Image
                 src={iconeGradient}
                 className={styles.shepherd_icone}
-                width={20}
+                style={{
+                  width: '3vw',
+                  height: '3vw'
+                }}
                 alt='logo'
               />
             </div>

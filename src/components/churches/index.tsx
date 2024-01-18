@@ -6,7 +6,7 @@ import styles from './styles.module.css'
 
 function Churches () {
   return (
-    <div className={styles.churchesContainer}>
+    <div className={styles.churchesContainer} id="enderecos">
       <p className={styles.churches_text}>Prédios Noah</p>
 
       <div className={styles.churches_addressList}>

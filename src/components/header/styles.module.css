@@ -3,4 +3,33 @@
   padding: 17px 41px;
   padding-bottom: 12px;
   position: relative;
+  display: flex;
+  gap: 70px
+}
+
+.menus {
+  display: flex;
+  gap: 38px
+}
+
+.itemMenu {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .itemMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 12px;
+  }
+
+  .menus {
+    gap: 20px
+  }
+}
+
+@media (min-width: 1024px) {
+
 }

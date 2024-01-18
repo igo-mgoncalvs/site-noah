@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 
 import phone from '@/assets/Celular.png'
@@ -7,17 +8,18 @@ import styles from './styles.module.css'
 
 function AboutUs () {
   return (
-    <div className={styles.aboutUsContainer}>
+    <div className={styles.aboutUsContainer} id="#sobre-nos">
       <Image
         src={backgroundPaper}
         className={styles.aboutUs_imageBackground}
         alt=''
+        
       />
       <div className={styles.aboutUs_Main}>
-        <Image
-          src={phone}
+        <img
+          src={'../../assets/Celular.png'}
           alt="Celular com ilustração do nome no'ah"
-          width={208}
+          className={styles.imagePhone}
         />
         <div className={styles.aboutUs}>
           <p className={styles.aboutUs_title}>Sobre Nós</p>

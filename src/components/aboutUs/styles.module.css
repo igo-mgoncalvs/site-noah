@@ -6,7 +6,7 @@
 .aboutUs_Main {
   background-color: #fff;
   display: flex;
-  padding-top: 26px;
+  padding-top: 20px;
 }
 
 .aboutUs_imageBackground {
@@ -14,9 +14,14 @@
   width: 100%;
 }
 
+.imagePhone {
+  width: 50vw;
+  height: auto;
+}
+
 .aboutUs {
   color: #000;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
 }
 
 .aboutUs_title {
@@ -51,4 +56,47 @@
   border-radius: 5px;
   color: #fff;
   font-weight: 400;
+}
+
+@media (max-width: 320px) {
+  .aboutUs {
+    padding-bottom: 30px;
+  }
+
+  .imagePhone {
+    display: none;
+  }
+
+  .aboutUs_Main {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 425px) {
+  .aboutUs {
+    padding-bottom: 34px;
+  }
+}
+
+@media (min-width: 768px) {
+  .aboutUs_title {
+    font-size: 50px;
+  }
+  
+  .aboutUs_listTitle {
+    font-size: 20px;
+  }
+
+  .aboutUs_description {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .aboutUs_list {
+    gap: 18px
+  }
+
+  .aboutUs_listPoint {
+    font-size: 18px;
+  }
 }

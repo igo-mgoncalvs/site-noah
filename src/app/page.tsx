@@ -19,6 +19,7 @@ import Medias from '@/components/medias'
 import Churches from '@/components/churches'
 
 export default function Home() {
+
   return (
     <main className={styles.main}>
       <Header />
@@ -44,7 +45,10 @@ export default function Home() {
 
               <Image 
                 src={icone}
-                width={83}
+                style={{
+                  width: '50vw',
+                  height: 'auto'
+                }}
                 alt='Ícone apóstrofe'
               />
             </div>
