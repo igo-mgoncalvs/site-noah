@@ -38,7 +38,7 @@ function Shepherds () {
             spaceBetween: 38
           },
           1440: {
-            slidesPerView: 3.9,
+            slidesPerView: 4.8,
             spaceBetween: 46
           }
         }}
