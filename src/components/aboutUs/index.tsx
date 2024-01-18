@@ -12,12 +12,15 @@ function AboutUs () {
       <Image
         src={backgroundPaper}
         className={styles.aboutUs_imageBackground}
+        style={{
+          height: '40vw'
+        }}
         alt=''
         
       />
       <div className={styles.aboutUs_Main}>
-        <img
-          src={'../../assets/Celular.png'}
+        <Image
+          src={phone}
           alt="Celular com ilustração do nome no'ah"
           className={styles.imagePhone}
         />

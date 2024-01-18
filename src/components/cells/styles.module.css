@@ -44,3 +44,40 @@
     line-height: 20px;
   }
 }
+
+@media (min-width: 1024px) {
+  .cellsContainer {
+    padding: 44px 38px;
+  }
+
+  .cells_title {
+    font-size: 50px;
+  }
+
+  .cells_text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .cellsContainer {
+    padding: 66px 132px;
+    padding-bottom: 140px;
+  }
+  
+  .cells_header{
+    padding-top: 183px;
+    padding-bottom: 226px;
+    font-size: 126px;
+  }
+
+  .cells_title {
+    font-size: 100px;
+  }
+
+  .cells_text {
+    font-size: 22px;
+    line-height: 24px;
+  }
+}

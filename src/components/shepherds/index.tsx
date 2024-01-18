@@ -26,6 +26,14 @@ function Shepherds () {
           768: {
             slidesPerView: 2.8,
             spaceBetween: 28
+          },
+          1024: {
+            slidesPerView: 3.2,
+            spaceBetween: 38
+          },
+          1440: {
+            slidesPerView: 3.9,
+            spaceBetween: 46
           }
         }}
         style={{ paddingRight: 20 }}
@@ -39,8 +47,8 @@ function Shepherds () {
                 width={80}
                 height={80}
                 style={{
-                  width: '20vw',
-                  height: '20vw'
+                  width: window.innerWidth >= 1440 ? '13vw' : '20vw',
+                  height: 'auto'
                 }}
                 className={styles.shepherd_image}
               />
@@ -50,8 +58,8 @@ function Shepherds () {
                 src={iconeGradient}
                 className={styles.shepherd_icone}
                 style={{
-                  width: '3vw',
-                  height: '3vw'
+                  width: window.innerWidth >= 1440 ? '2vw' : '3vw',
+                  height: 'auto'
                 }}
                 alt='logo'
               />

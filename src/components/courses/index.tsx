@@ -40,7 +40,7 @@ function Courses () {
         <div>
           <p className={styles.courses_MaturityTitle}>CTL</p>
 
-          <p className={styles.courses_text}>O Curso de <span className="medium">Treinamento de Líderes</span> é composto por 10 matérias sendo elas:</p>
+          <p className={styles.courses_text}>O <span className="medium">Curso de Treinamento de Líderes</span> é composto por 10 matérias sendo elas:</p>
 
           <ul className={styles.courses_list}>
             <li>A Visão das Células</li>

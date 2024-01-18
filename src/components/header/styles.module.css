@@ -31,5 +31,7 @@
 }
 
 @media (min-width: 1024px) {
-
+  .itemMenu {
+    font-size: 18px;
+  }
 }

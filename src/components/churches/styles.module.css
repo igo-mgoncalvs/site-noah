@@ -48,3 +48,41 @@
     font-size: 14px;
   }
 }
+
+@media (min-width: 1024px) {
+  .churchesContainer {
+    padding: 30px 34px;
+  }
+
+  .churches_itemTitle {
+    font-size: 24px;
+  }
+
+  .churches_itemAddress {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .churchesContainer {
+    padding: 33px 56px;
+  }
+
+  .churches_addressList {
+    gap: 54px 140px;
+  }
+
+  .churches_text {
+    font-size: 80px;
+    padding-bottom: 56px;
+  }
+
+  .churches_itemTitle {
+    font-size: 30px;
+  }
+
+  .churches_itemAddress {
+    font-size: 20px;
+    font-weight: 300;
+  }
+}

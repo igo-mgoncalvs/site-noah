@@ -53,6 +53,10 @@
   text-decoration: none;
 }
 
+.medias_spotifyButton, .medias_youtubeButton {
+  cursor: pointer;
+}
+
 .medias_youtubeButton {
   background-color: #FF0000;
   color: #fff;
@@ -102,5 +106,46 @@
 
   .medias_youtubeButton {
     font-size: 28px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .medias_spotifyButton {
+    font-size: 50px;
+    border-radius: 60px;
+  }
+
+  .medias_youtubeButton {
+    border-radius: 60px;
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .medias_title {
+    font-size: 113px;
+    margin-top: 60px;
+  }
+
+  .medias_spotify {
+    font-size: 206px;
+    margin-top: 50px;
+    margin-bottom: 95px;
+  }
+  
+  .medias_youtube {
+    font-size: 206px;
+    margin-bottom: 95px;
+    margin-top: 150px;
+  }
+
+  .medias_spotifyButton {
+    font-size: 113px;
+    padding: 15px 117px; 
+  }
+
+  .medias_youtubeButton {
+    font-size: 66px;
+    padding: 15px 68px; 
   }
 }

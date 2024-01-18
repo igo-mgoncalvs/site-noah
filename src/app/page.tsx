@@ -17,6 +17,7 @@ import Shepherds from '@/components/shepherds'
 import Courses from '@/components/courses'
 import Medias from '@/components/medias'
 import Churches from '@/components/churches'
+import Footer from '@/components/footer'
 
 export default function Home() {
 
@@ -24,50 +25,53 @@ export default function Home() {
     <main className={styles.main}>
       <Header />
 
-        <div className={styles.container}>
-          <div className={styles.welcomeContainer}>
-            <p className={styles.title}>
-              Seja bem-<br/>vindo à Noah!
-            </p>
+      <div className={styles.container}>
+        <div className={styles.welcomeContainer}>
+          <p className={styles.title}>
+            Seja bem-<br/>vindo à Noah!
+          </p>
 
-            <div className={styles.description}>
-              <div className={styles.verse}>
-                <p>
-                  &quot;Venham a mim, todos os que estão cansados e sobrecarregados, e eu darei
-                  <span className="medium"> descanso </span>
-                  a vocês.” 
-                </p>
-                <p>
-                  <br/>
-                  Mateus 11:28
-                </p>
-              </div>
-
-              <Image 
-                src={icone}
-                style={{
-                  width: '50vw',
-                  height: 'auto'
-                }}
-                alt='Ícone apóstrofe'
-              />
+          <div className={styles.description}>
+            <div className={styles.verse}>
+              <p>
+                &quot;Venham a mim, todos os que estão cansados e sobrecarregados, e eu darei
+                <span className="medium"> descanso </span>
+                a vocês.” 
+              </p>
+              <p>
+                <br/>
+                Mateus 11:28
+              </p>
             </div>
+
+            <Image 
+              src={icone}
+              style={{
+                width: window.innerWidth >= 1024 ? '80vw' : '30vw',
+                height: 'auto'
+              }}
+              className={styles.icon}
+              alt='Ícone apóstrofe'
+            />
           </div>
         </div>
+      </div>
 
-        <AboutUs />
+      <AboutUs />
 
-        <Cells />
+      <Cells />
 
-        <Ministries />
+      <Ministries />
 
-        <Shepherds />
+      <Shepherds />
 
-        <Courses />
+      <Courses />
 
-        <Medias />
+      <Medias />
 
-        <Churches />
+      <Churches />
+
+      <Footer />
     </main>
   )
 }
