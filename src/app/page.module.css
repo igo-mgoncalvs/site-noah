@@ -1,229 +1,365 @@
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
+.banner {
+  width: 100vw;
+  height: 50%;
+}
+
+
+.container {
+  background-image: url('../assets/Capa.png');
+  background-size: contain;
+  padding-top: 90px;
+}
+
+.welcomeContainer {
+  background-image: linear-gradient(0deg, #702280 77.5%, rgba(217, 217, 217, 0.00) 88.69%);
+  padding: 28px 30px;
+}
+
+.title {
+  font-size: 34px;
+  font-weight: 300;
+  margin-top: 80px;
 }
 
 .description {
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
-  font-size: 0.85rem;
-  max-width: var(--max-width);
-  width: 100%;
-  z-index: 2;
-  font-family: var(--font-mono);
-}
-
-.description a {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
+  gap: 36px;
+  margin-top: 6px;
 }
 
-.description p {
-  position: relative;
-  margin: 0;
-  padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
-  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-  border-radius: var(--border-radius);
+.verse {
+  line-height: 14.289px;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 12px;
 }
 
-.code {
-  font-weight: 700;
-  font-family: var(--font-mono);
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
-  max-width: 100%;
-  width: var(--max-width);
-}
-
-.card {
-  padding: 1rem 1.2rem;
-  border-radius: var(--border-radius);
-  background: rgba(var(--card-rgb), 0);
-  border: 1px solid rgba(var(--card-border-rgb), 0);
-  transition: background 200ms, border 200ms;
-}
-
-.card span {
-  display: inline-block;
-  transition: transform 200ms;
-}
-
-.card h2 {
-  font-weight: 600;
-  margin-bottom: 0.7rem;
-}
-
-.card p {
-  margin: 0;
-  opacity: 0.6;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  max-width: 30ch;
-}
-
-.center {
+.aboutUsContainer {
+  background-color: #fff;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  padding: 4rem 0;
 }
 
-.center::before {
-  background: var(--secondary-glow);
-  border-radius: 50%;
-  width: 480px;
-  height: 360px;
-  margin-left: -400px;
+.aboutUs_Main {
+  background-color: #fff;
+  display: flex;
+  padding-top: 26px;
 }
 
-.center::after {
-  background: var(--primary-glow);
-  width: 240px;
-  height: 180px;
-  z-index: -1;
-}
-
-.center::before,
-.center::after {
-  content: '';
-  left: 50%;
+.aboutUs_imageBackground {
   position: absolute;
-  filter: blur(45px);
-  transform: translateZ(0);
+  width: 100%;
 }
 
-.logo {
-  position: relative;
-}
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  .card:hover {
-    background: rgba(var(--card-rgb), 0.1);
-    border: 1px solid rgba(var(--card-border-rgb), 0.15);
-  }
-
-  .card:hover span {
-    transform: translateX(4px);
-  }
+.aboutUs {
+  color: #000;
+  padding-bottom: 30px;
 }
 
-@media (prefers-reduced-motion) {
-  .card:hover span {
-    transform: none;
-  }
+.aboutUs_title {
+  font-size: 28px;
+  font-weight: 200;
+  margin-bottom: 16px;
 }
 
-/* Mobile */
-@media (max-width: 700px) {
-  .content {
-    padding: 4rem;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-    margin-bottom: 120px;
-    max-width: 320px;
-    text-align: center;
-  }
-
-  .card {
-    padding: 1rem 2.5rem;
-  }
-
-  .card h2 {
-    margin-bottom: 0.5rem;
-  }
-
-  .center {
-    padding: 8rem 0 6rem;
-  }
-
-  .center::before {
-    transform: none;
-    height: 300px;
-  }
-
-  .description {
-    font-size: 0.8rem;
-  }
-
-  .description a {
-    padding: 1rem;
-  }
-
-  .description p,
-  .description div {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    width: 100%;
-  }
-
-  .description p {
-    align-items: center;
-    inset: 0 0 auto;
-    padding: 2rem 1rem 1.4rem;
-    border-radius: 0;
-    border: none;
-    border-bottom: 1px solid rgba(var(--callout-border-rgb), 0.25);
-    background: linear-gradient(
-      to bottom,
-      rgba(var(--background-start-rgb), 1),
-      rgba(var(--callout-rgb), 0.5)
-    );
-    background-clip: padding-box;
-    backdrop-filter: blur(24px);
-  }
-
-  .description div {
-    align-items: flex-end;
-    pointer-events: none;
-    inset: auto 0 0;
-    padding: 2rem;
-    height: 200px;
-    background: linear-gradient(
-      to bottom,
-      transparent 0%,
-      rgb(var(--background-end-rgb)) 40%
-    );
-    z-index: 1;
-  }
+.aboutUs_listTitle {
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 8px;
 }
 
-/* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
-  .grid {
-    grid-template-columns: repeat(2, 50%);
-  }
+.aboutUs_description {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 12.836px;
 }
 
-@media (prefers-color-scheme: dark) {
-  .vercelLogo {
-    filter: invert(1);
-  }
-
-  .logo {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
-  }
+.aboutUs_list {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 16px;
 }
 
-@keyframes rotate {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
+.aboutUs_listPoint {
+  font-size: 8px;
+  padding: 6px;
+  background-color: #39196E;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.cellsContainer {
+  padding: 20px;
+  background-color: #02161E;
+}
+
+.cells_header {
+  background-image: url('../assets/Celulas.png');
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.cells_title {
+  font-size: 30px;
+  margin-bottom: 6px;
+  font-weight: 300;
+}
+
+.cells_text {
+  font-size: 10px;
+  font-weight: 300;
+}
+
+.ministriesContainer {
+  background-color: #fff;
+  color: #000;
+  padding-top: 15px;
+  padding-bottom: 24px;
+}
+
+.ministries_title {
+  font-size: 26px;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 22px;
+}
+
+.ministries_list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px
+}
+
+.ministries_item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 0 18px;
+}
+
+.ministries_listTitles {
+  font-size: 20px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.ministries_listDescription {
+  font-size: 10px;
+  line-height: 11.001px;
+}
+
+.ministries_rlsp {
+  color: #031CFF;
+}
+
+.ministries_k {
+  color: #FF7A00;
+  font-size: 28px;
+}
+
+.ministries_i {
+  color:#74BC51;
+  font-size: 28px;
+}
+
+.ministries_d {
+  color: #FFB800;
+  font-size: 28px;
+}
+
+.ministries_s {
+  color: #0085FF;
+  font-size: 28px;
+}
+
+.shepherdContainer {
+  padding: 20px;
+  background: linear-gradient(90deg, #39196E 40.17%, #702280 88.78%);
+}
+
+.shepherd_title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.shepherd {
+  display: flex;
+  flex-direction: row;
+  gap: 18px
+}
+
+.shepherd_card {
+  background-color: #fff;
+  padding: 14px 30px;
+  padding-bottom: 0;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shepherd_image {
+  border-radius: 100%;
+  box-shadow: 0px 1.624px 1.624px 0px rgba(0, 0, 0, 0.25), 0px 1.624px 1.624px 0px rgba(0, 0, 0, 0.25);
+}
+
+.shepherd_name {
+  display: flex;
+  justify-content: center;
+  color: #000;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.shepherd_church {
+  display: flex;
+  justify-content: center;
+  color: #000;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.coursesContainer {
+  background-color: #02161E;
+}
+
+.courses_header {
+  background: url('../assets/Courses.png'), lightgray 0px -303.25px / 100% 177.045% no-repeat;
+  mix-blend-mode: luminosity;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+  padding-bottom: 38px;
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.courses_main {
+  padding: 24px 22px;
+
+}
+
+.courses_MaturityTitle {
+  font-size: 31px;
+  font-weight: 300;
+  margin-bottom: 12px;
+}
+
+.courses_text {
+  font-size: 12px;
+  margin-bottom: 12px;
+  font-weight: 300;
+}
+
+.courses_list {
+  font-size: 12px;
+  font-weight: 300;
+  margin-left: 22px;
+  margin-bottom: 12px;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.mediasContainer {
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url('../assets/backgroundPaper.png');
+}
+
+.medias_title {
+  font-size: 24px;
+  margin: 20px;
+}
+
+.medias_main {
+  width: 100%;
+}
+
+.medias {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  margin: 0 15px;
+}
+
+.medias_spotify {
+  font-size: 43px;
+  color: #31CB6B;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+}
+
+.medias_youtube {
+  font-size: 43px;
+  color: #FF0000;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+}
+
+.medias_spotifyButton { 
+  background-color: #31CB6B;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 12px;
+  margin-right: 40px;
+  font-size: 28px;
+}
+
+.medias_youtubeButton {
+  background-color: #FF0000;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 10px;
+  font-size: 17px;
+  margin-left: 40px;
+}
+
+.medias_imageBackground {
+  position: absolute;
+}
+
+.churchesContainer {
+  background-color: #02161E;
+  padding: 18px 24px;
+}
+
+.churches_addressList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 80px
+}
+
+.churches_text {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+
+.churches_itemTitle {
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.churches_itemAddress {
+  font-size: 10px;
 }
