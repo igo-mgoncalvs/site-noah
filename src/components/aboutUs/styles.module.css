@@ -4,7 +4,8 @@
 }
 
 .aboutUs_Main {
-  background-color: #fff;
+  background-image: url('../../assets/backgroundPaper.png');
+  background-size: cover;
   display: flex;
   padding-top: 20px;
 }

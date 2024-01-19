@@ -9,15 +9,15 @@ import styles from './styles.module.css'
 function AboutUs () {
   return (
     <div className={styles.aboutUsContainer} id="#sobre-nos">
-      <Image
+      {/* <Image
         src={backgroundPaper}
         className={styles.aboutUs_imageBackground}
         style={{
-          height: '40vw'
+          height: '55vh'
         }}
         alt=''
         
-      />
+      /> */}
       <div className={styles.aboutUs_Main}>
         <Image
           src={phone}

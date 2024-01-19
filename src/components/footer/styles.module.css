@@ -1,5 +1,6 @@
 .container {
-  margin: 20px;
+  padding: 20px;
+  background-color: #000;
 }
 
 .title {
@@ -34,13 +35,13 @@
 
 @media (min-width: 1024px) {
   .container {
-    margin: 30px;
+    padding: 30px;
   }
 }
 
 @media (min-width: 1440px) {
   .container {
-    margin: 50px;
+    padding: 50px;
   }
 
   .title {
