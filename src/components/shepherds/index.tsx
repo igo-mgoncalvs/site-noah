@@ -49,15 +49,12 @@ function Shepherds () {
             {size.width && (
 
             <div className={styles.shepherd_card}>
-              <Image
-                src={item.img || ""}
-                alt={item.name}
-                width={80}
-                height={80}
+              <div 
                 style={{
+                  backgroundImage: `url(${item.img})`,
+                  backgroundSize: 'cover',
                   width: size.width >= 1440 ? '13vw' : '20vw',
-                  height: 'auto',
-                  objectFit: "contain"
+                  height: size.width >= 1440 ? '13vw' : '20vw',
                 }}
                 className={styles.shepherd_image}
               />
