@@ -1,11 +1,17 @@
-.mediasContainer {
+.background {
+  background-image: url('../../assets/backgroundPaper.png');
   background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.mediasContainer {
   color: #000;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-image: url('../../assets/backgroundPaper.png');
+  max-width: 1400px;
 }
 
 .medias_title {
@@ -46,7 +52,7 @@
   border: none;
   padding: 6px 16px;
   border-radius: 12px;
-  margin-right: 40px;
+  margin-left: 40px;
   font-size: 28px;
   color: #fff;
   font-weight: 500;
@@ -66,7 +72,7 @@
   border-radius: 10px;
   font-size: 17px;
   text-decoration: none;
-  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .medias_imageBackground {
@@ -111,41 +117,43 @@
 
 @media (min-width: 1024px) {
   .medias_spotifyButton {
-    font-size: 50px;
-    border-radius: 60px;
+    font-size: 28px;
+    border-radius: 20px;
+    padding: 10px 40px; 
   }
 
   .medias_youtubeButton {
-    border-radius: 60px;
-    font-size: 50px;
+    border-radius: 20px;
+    font-size: 28px;
+    padding: 10px 40px; 
   }
 }
 
 @media (min-width: 1440px) {
   .medias_title {
-    font-size: 113px;
+    font-size: 68px;
     margin-top: 60px;
   }
 
   .medias_spotify {
-    font-size: 206px;
+    font-size: 68px;
     margin-top: 50px;
     margin-bottom: 95px;
   }
   
   .medias_youtube {
-    font-size: 206px;
+    font-size: 68px;
     margin-bottom: 95px;
-    margin-top: 150px;
+    margin-top: 80px;
   }
+}
 
+@media (min-width: 2000px ) {
   .medias_spotifyButton {
-    font-size: 113px;
-    padding: 15px 117px; 
+    font-size: 48px;
   }
 
   .medias_youtubeButton {
-    font-size: 66px;
-    padding: 15px 68px; 
+    font-size: 48px;
   }
 }

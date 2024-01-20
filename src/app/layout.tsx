@@ -3,7 +3,7 @@ import { Montserrat } from 'next/font/google'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Igreja Noah',
+  title: "Igreja No'ah",
 }
 
 const montserrat = Montserrat({

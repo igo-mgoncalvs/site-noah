@@ -25,21 +25,26 @@ function Shepherds () {
         breakpoints={{
           320: {
             slidesPerView: 2.3,
+            slidesOffsetAfter: 20
           },
           425: {
-            slidesPerView: 2.5
+            slidesPerView: 2.5,
+            slidesOffsetAfter: 30,
           },
           768: {
             slidesPerView: 2.8,
-            spaceBetween: 28
+            spaceBetween: 28,
+            slidesOffsetAfter: 50,
           },
           1024: {
             slidesPerView: 3.2,
-            spaceBetween: 38
+            spaceBetween: 38,
+            slidesOffsetAfter: 80,
           },
           1440: {
             slidesPerView: 4.8,
-            spaceBetween: 46
+            spaceBetween: 46,
+            slidesOffsetAfter: 200
           }
         }}
         style={{ paddingRight: 20 }}

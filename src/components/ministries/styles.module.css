@@ -1,8 +1,16 @@
-.ministriesContainer {
+.background {
+  background-image: url('../../assets/backgroundPaper.png');
+  background-size: cover;
   background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.ministriesContainer {
   color: #000;
   padding-top: 15px;
   padding-bottom: 24px;
+  max-width: 1400px;
 }
 
 .ministries_title {
@@ -71,11 +79,6 @@
     padding: 20px 25px;
   }
 
-  .ministriesContainer {
-    background-image: url('../../assets/backgroundPaper.png');
-    background-size: cover;
-  }
-
   .ministries_title {
     font-size: 40px;
   }
@@ -130,7 +133,7 @@
   }
   
   .ministries_listTitles  {
-    font-size: 78px;
+    font-size: 50px;
     margin-bottom: 50px;
   }
 

@@ -1,6 +1,12 @@
-.churchesContainer {
+.background {
   background-color: #02161E;
+  display: flex;
+  justify-content: center;
+}
+
+.churchesContainer {
   padding: 18px 24px;
+  max-width: 1400px;
 }
 
 .churches_addressList {

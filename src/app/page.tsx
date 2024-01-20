@@ -24,35 +24,38 @@ export default function Home() {
       <Header />
 
       <div className={styles.container}>
-        <div className={styles.welcomeContainer}>
-          <p className={styles.title}>
-            Seja bem-<br/>vindo à Noah!
-          </p>
+        <div className={styles.background}>
+          <div className={styles.welcomeContainer}>
+            <p className={styles.title}>
+              Seja bem-<br/>{"vindo à No'ah!"}
+            </p>
 
-          <div className={styles.description}>
-            <div className={styles.verse}>
-              <p>
-                &quot;Venham a mim, todos os que estão cansados e sobrecarregados, e eu darei
-                <span className="medium"> descanso </span>
-                a vocês.” 
-              </p>
-              <p>
-                <br/>
-                Mateus 11:28
-              </p>
+            <div className={styles.description}>
+              <div className={styles.verse}>
+                <p>
+                  &quot;Venham a mim, todos os que estão cansados e sobrecarregados, e eu darei
+                  <span className="medium"> descanso </span>
+                  a vocês.” 
+                </p>
+                <p>
+                  <br/>
+                  Mateus 11:28
+                </p>
+              </div>
+
+              {size.width && (
+                <Image 
+                  src={icone}
+                  style={{
+                    width: size.width >= 1024 ? '35vw' : '30vw',
+                    height: 'auto',
+                    maxWidth: '210px'
+                  }}
+                  className={styles.icon}
+                  alt='Ícone apóstrofe'
+                />
+              )}
             </div>
-
-            {size.width && (
-              <Image 
-                src={icone}
-                style={{
-                  width: size.width >= 1024 ? '80vw' : '30vw',
-                  height: 'auto'
-                }}
-                className={styles.icon}
-                alt='Ícone apóstrofe'
-              />
-            )}
           </div>
         </div>
       </div>

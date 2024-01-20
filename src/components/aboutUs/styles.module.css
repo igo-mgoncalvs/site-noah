@@ -1,10 +1,16 @@
-.aboutUsContainer {
+.background {
+  background-image: url('../../assets/backgroundPaper.png');
   background-color: #fff;
   display: flex;
+  justify-content: center;
+}
+
+.aboutUsContainer {
+  display: flex;
+    max-width: 1400px;
 }
 
 .aboutUs_Main {
-  background-image: url('../../assets/backgroundPaper.png');
   background-size: cover;
   display: flex;
   padding-top: 20px;

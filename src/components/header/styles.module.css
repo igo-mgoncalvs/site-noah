@@ -1,15 +1,20 @@
-.container {
+.background {
   background: linear-gradient(90deg, #39196E 2.43%, #702280 52.88%);
+}
+
+.container {
   padding: 17px 41px;
   padding-bottom: 12px;
   position: relative;
   display: flex;
-  gap: 70px
+  gap: 8vw;
+    max-width: 1400px;
+  margin: auto;
 }
 
 .menus {
   display: flex;
-  gap: 38px
+  gap: 2vw
 }
 
 .itemMenu {
@@ -25,13 +30,34 @@
     font-size: 12px;
   }
 
-  .menus {
-    gap: 20px
-  }
 }
 
 @media (min-width: 1024px) {
   .itemMenu {
-    font-size: 18px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    padding: 24px 41px;
+  }
+
+  .itemMenu {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 2000px) {
+  .container {
+    gap: 6vw;
+  }
+
+  .container {
+    padding: 24px 41px;
+  }
+
+  .itemMenu {
+    font-size: 24px;
   }
 }

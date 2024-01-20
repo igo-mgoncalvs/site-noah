@@ -1,6 +1,13 @@
+.background {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+}
+
 .container {
   padding: 20px;
-  background-color: #000;
+  max-width: 1400px;
+  width: 100%;
 }
 
 .title {

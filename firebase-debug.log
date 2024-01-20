@@ -1,0 +1,18 @@
+[debug] [2024-01-20T00:41:18.140Z] ----------------------------------------------------------------------
+[debug] [2024-01-20T00:41:18.143Z] Command:       C:\Users\igor.moreira\.nvm\versions\node\v20.11.0\bin\node.exe C:\Users\igor.moreira\.nvm\versions\node\v20.11.0\bin\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-01-20T00:41:18.143Z] CLI Version:   13.0.3
+[debug] [2024-01-20T00:41:18.143Z] Platform:      win32
+[debug] [2024-01-20T00:41:18.144Z] Node Version:  v20.11.0
+[debug] [2024-01-20T00:41:18.144Z] Time:          Fri Jan 19 2024 21:41:18 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2024-01-20T00:41:18.144Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-20T00:41:18.202Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-20T00:41:18.202Z] > authorizing via signed-in user (igor2013mgoncalves@gmail.com)
+[debug] [2024-01-20T00:41:18.203Z] [iam] checking project noah-a5e95 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-01-20T00:41:18.204Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/noah-a5e95:testIamPermissions [none]
+[debug] [2024-01-20T00:41:18.204Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/noah-a5e95:testIamPermissions x-goog-quota-user=projects/noah-a5e95
+[debug] [2024-01-20T00:41:18.204Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/noah-a5e95:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-01-20T00:41:19.195Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/noah-a5e95:testIamPermissions 200
+[debug] [2024-01-20T00:41:19.195Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/noah-a5e95:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-01-20T00:41:19.196Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/noah-a5e95 [none]
+[debug] [2024-01-20T00:41:19.627Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/noah-a5e95 200
