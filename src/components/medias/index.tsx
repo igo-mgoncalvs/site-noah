@@ -14,8 +14,10 @@ function Medias () {
           <p className={styles.medias_spotify}>Spotify</p>
           <div className={styles.medias}>
             <Image
-              src={spotify}
+              src={'https://i.postimg.cc/66DTChqW/spotify.png'}
               alt='Imagem do spotify no celular'
+              width={50}
+              height={50}
               style={{
                 width: '20vw',
                 height: 'auto',
@@ -46,8 +48,10 @@ function Medias () {
               </a>
             </div>
             <Image
-              src={youtube}
+              src={'https://i.postimg.cc/0yvQB27h/youtube.png'}
               alt='Imagem do youtube no celular'
+              width={50}
+              height={50}
               style={{
                 width: '20vw',
                 height: 'auto',

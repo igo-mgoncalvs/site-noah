@@ -19,7 +19,9 @@ function Ministries () {
             <Image
               style={{width: '30vw', maxWidth: '430px', maxHeight: '360px', height: '25vw'}}
               className={styles.image}
-              src={image1}
+              width={50}
+              height={50}
+              src={'https://i.postimg.cc/59H6HrxK/Image1.png'}
               alt=''
             />
             <div>
@@ -36,7 +38,9 @@ function Ministries () {
             <Image
               style={{width: '30vw', maxWidth: '430px', maxHeight: '360px', height: '25vw'}}
               className={styles.image}
-              src={image2}
+              src={'https://i.postimg.cc/6TJsTq9K/Image2.png'}
+              width={50}
+              height={50}
               alt=''
             />
             <div>
@@ -52,7 +56,9 @@ function Ministries () {
             <Image
               style={{width: '30vw', maxWidth: '430px', maxHeight: '360px', height: '25vw'}}
               className={styles.image}
-              src={image3}
+              src={'https://i.postimg.cc/63PxJzgy/Image3.png'}
+              width={50}
+              height={50}
               alt=''
             />
             <div>
@@ -62,9 +68,11 @@ function Ministries () {
           </div>
           <div className={styles.ministries_item}>
             <Image
-              style={{width: '30vw', maxWidth: '430px', maxHeight: '360px', height: '25vw'}}
+              style={{width: '60vw', maxWidth: '430px', maxHeight: '360px', height: '25vw'}}
               className={styles.image}
-              src={image4}
+              src={'https://i.postimg.cc/28hyGBL4/Image4.png'}
+              width={50}
+              height={50}
               alt=''
             />
             <div>
@@ -76,7 +84,9 @@ function Ministries () {
             <Image
               style={{width: '30vw', maxWidth: '430px', maxHeight: '360px', height: '25vw'}}
               className={styles.image}
-              src={image5}
+              src={'https://i.postimg.cc/C57WFgvM/diaconato.png'}
+              width={50}
+              height={50}
               alt=''
             />
             <div>

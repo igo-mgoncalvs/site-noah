@@ -2,8 +2,6 @@
 import Image from "next/image";
 
 import phone from '@/assets/Celular.png'
-import backgroundPaper from '@/assets/backgroundPaper.png'
-
 import styles from './styles.module.css'
 
 function AboutUs () {
@@ -12,8 +10,14 @@ function AboutUs () {
       <div className={styles.aboutUsContainer} id="#sobre-nos">
         <div className={styles.aboutUs_Main}>
           <Image
-            src={phone}
+            src={'https://i.postimg.cc/26yNKgHs/Celular.png'}
             alt="Celular com ilustração do nome no'ah"
+            width={50}
+            height={50}
+            style={{
+              width: '50vw',
+              height: 'auto'
+            }}
             className={styles.imagePhone}
           />
           <div className={styles.aboutUs}>
