@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
 import './globals.css'
+import FloatWhatsapp from '@/components/floatWhatsapp'
 
 export const metadata: Metadata = {
   title: "Igreja No'ah",
@@ -19,7 +20,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br" className={montserrat.className}>
-      <body>{children}</body>
+      <body>
+        {children}
+        <FloatWhatsapp />
+      </body>
     </html>
   )
 }
