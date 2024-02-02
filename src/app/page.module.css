@@ -10,10 +10,10 @@
 }
 
 .background {
-  background-image: linear-gradient(0deg, rgb(112, 34, 128) 85.5%, rgba(217, 217, 217, 0) 99.69%);
+  background-image: linear-gradient(0deg, rgb(112, 34, 128) 82.5%, rgba(217, 217, 217, 0) 99.69%);
   display: flex;
   justify-content: center;
-  padding: 28px 30px;
+  padding: 36px 30px;
 }
 
 .welcomeContainer {
@@ -44,14 +44,28 @@
   width: 200px;
 }
 
+@media (min-width: 375px) {
+  .background {
+    background-image: linear-gradient(0deg, rgb(112, 34, 128) 76.5%, rgba(217, 217, 217, 0) 99.69%);
+    padding-top: 68px;
+  }
+}
+
+@media (min-width: 425px) {
+  .background {
+    background-image: linear-gradient(0deg, rgb(112, 34, 128) 71.5%, rgba(217, 217, 217, 0) 99.69%);
+    padding-top: 90px;
+  }
+}
+
 @media (min-width: 768px) {
   .container {
     padding-top: 132px;
   }
   
   .background {
-    padding-top: 178px;
-    background-image: linear-gradient(0deg, #702280 58.5%, rgba(217, 217, 217, 0.00) 99.69%);
+    background-image: linear-gradient(0deg, #702280 63.5%, rgba(217, 217, 217, 0.00) 99.69%);
+    padding-top: 244px;
   }
 
   .title {
@@ -72,8 +86,8 @@
 
 @media (min-width: 1024px) {
   .background {
-    padding-top: 293px;
-    background-image: linear-gradient(0deg, #702280 67.5%, rgba(217, 217, 217, 0.00) 99.69%);
+    padding-top: 354px;
+    background-image: linear-gradient(0deg, #702280 58.5%, rgba(217, 217, 217, 0.00) 92.69%);
   }
 
   .title{
@@ -98,7 +112,7 @@
 @media (min-width: 1440px) {
   .background {
     padding: 80px 163px;
-    padding-top: 480px;
+    padding-top: 552px;
     background-image: linear-gradient(0deg, #702280 49.5%, rgba(217, 217, 217, 0.00) 99.69%);
   }
 }
@@ -106,7 +120,7 @@
 @media (min-width: 2000px) {
   .background {
     padding: 80px 163px;
-    padding-top: 480px;
-    background-image: linear-gradient(0deg, #702280 22.5%, rgba(217, 217, 217, 0.00) 99.69%);
+    padding-top: 966px;
+    background-image: linear-gradient(0deg, #702280 38.5%, rgba(217, 217, 217, 0.00) 99.69%);
   }
 }
