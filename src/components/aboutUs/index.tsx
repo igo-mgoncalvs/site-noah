@@ -6,8 +6,8 @@ import styles from './styles.module.css'
 
 function AboutUs () {
   return (
-    <div className={styles.background}>
-      <div className={styles.aboutUsContainer} id="#sobre-nos">
+    <div className={styles.background} id="sobre-nos">
+      <div className={styles.aboutUsContainer}>
         <div className={styles.aboutUs_Main}>
           <Image
             src={'https://i.postimg.cc/26yNKgHs/Celular.png'}

@@ -1,11 +1,61 @@
+'use client'
+
 import React from "react"
 import logo from "@/assets/icons/logo-noah.svg"
 import Image from "next/image"
 import styles from './styles.module.css'
 import useWindowSize from "@/hooks/useWindowSize"
+import { analytics } from "@/lib/analytics"
+import { logEvent } from "firebase/analytics"
 
 function Header () {
   const size = useWindowSize()
+
+  const menusData = [
+    {
+      id: 0,
+      title: 'Sobre nós',
+      redirect: '#sobre-nos'
+    },
+    {
+      id: 1,
+      title: 'Células',
+      redirect: '#celulas'
+    },
+    {
+      id: 2,
+      title: 'Ministérios',
+      redirect: '#ministerios'
+    },
+    {
+      id: 3,
+      title: 'Pregação',
+      redirect: '#pregacao'
+    },
+    {
+      id: 4,
+      title: 'Endereços',
+      redirect: '#enderecos'
+    },
+    {
+      id: 5,
+      title: 'Pastores',
+      redirect: '#pastores'
+    },
+    {
+      id: 6,
+      title: 'Cursos',
+      redirect: '#cursos'
+    },
+  ]
+
+  const registerEvent = (page: string) => {
+    if(analytics) {
+      logEvent(analytics, 'page_view', {
+        page_title: page
+      })
+    }
+  }
 
   return (
     <div className={styles.background}>
@@ -22,48 +72,19 @@ function Header () {
         )}
 
         <div className={styles.menus}>
-          <a
-            className={styles.itemMenu}
-            href="#sobre-nos"
-          >
-            Sobre nós
-          </a>
-          <a
-            href="#celulas"
-            className={styles.itemMenu}
-          >
-            Células
-          </a>
-          <a
-            href="#ministerios"
-            className={styles.itemMenu}
-          >
-            Ministérios
-          </a>
-          <a
-            href="#pregacao"
-            className={styles.itemMenu}
-          >
-            Pregação
-          </a>
-          <a
-            href="#enderecos"
-            className={styles.itemMenu}
-          >
-            Endereços
-          </a>
-          <a
-            href="#pastores"
-            className={styles.itemMenu}
-          >
-            Pastores
-          </a>
-          <a
-            href="#cursos"
-            className={styles.itemMenu}
-          >
-            Cursos
-          </a>
+          {menusData.map((item) => (
+            <div
+              key={item.id}
+              onClickCapture={() => registerEvent(item.title)}
+            >
+              <a
+                className={styles.itemMenu}
+                href={item.redirect}
+              >
+                {item.title}
+              </a>
+            </div>
+          ))}
         </div>
       </div>
     </div>
