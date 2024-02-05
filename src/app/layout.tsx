@@ -5,6 +5,15 @@ import FloatWhatsapp from '@/components/floatWhatsapp'
 
 export const metadata: Metadata = {
   title: "Igreja No'ah",
+  verification: {
+    google: "5dQJIRZ64xk8wnlAzbiYxICdpDx4zZRykwSWIbDXTKw"
+  },
+  robots: {
+    index: true,
+    googleBot: {
+      index: true
+    }
+  }
 }
 
 const montserrat = Montserrat({
