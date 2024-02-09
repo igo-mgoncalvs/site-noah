@@ -6,6 +6,7 @@ import FloatWhatsapp from '@/components/floatWhatsapp'
 export const metadata: Metadata = {
   title: "Igreja No'ah",
   description: 'Um lugar de descanso! - "Venham a mim, todos os que estão cansados e sobrecarregados, e eu darei descanso a vocês." Mateus 11:28',
+  keywords: ['igreja', 'noah', 'igreja noah', 'lugar de descanso', 'Mateus 11:28', 'igreja em Mauá', 'igreja em Santo André', 'igreja em Araucária', 'igreja em Curitiba'],
   verification: {
     google: "5dQJIRZ64xk8wnlAzbiYxICdpDx4zZRykwSWIbDXTKw"
   },
