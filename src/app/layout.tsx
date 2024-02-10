@@ -4,7 +4,7 @@ import './globals.css'
 import FloatWhatsapp from '@/components/floatWhatsapp'
 
 export const metadata: Metadata = {
-  title: "Igreja No'ah",
+  title: "Igreja Noah",
   description: 'Um lugar de descanso! - "Venham a mim, todos os que estão cansados e sobrecarregados, e eu darei descanso a vocês." Mateus 11:28',
   keywords: ['igreja', 'noah', 'igreja noah', 'lugar de descanso', 'Mateus 11:28', 'igreja em Mauá', 'igreja em Santo André', 'igreja em Araucária', 'igreja em Curitiba'],
   verification: {
